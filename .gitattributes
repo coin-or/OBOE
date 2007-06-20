@@ -18,7 +18,6 @@ WIN32/OBOE_LIB.vs5.vcproj -text
 WIN32/Test/MCFTest/MCFTest.vcproj -text
 WIN32/Test/MCFTest/ReadMe.txt -text
 WIN32/config.h -text
-/aclocal.m4 -text
 /config.h -text
 /config.h.in -text
 config/config.guess -text
@@ -46,7 +45,6 @@ include/Parameters.h -text
 include/QpGenerator.h -text
 include/Timer.h -text
 include/config.h -text
-lib/OBOE.vs5.lib -text
 m4/Makefile.am -text
 m4/Makefile.in -text
 m4/coin.m4 -text

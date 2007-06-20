@@ -1,4 +1,4 @@
-# Copyright (C) 2005 Nidhi Sawhney <nidhi.sawhney@hec.unige.ch>
+# Copyright (C) 2005 Nidhi Sawhney <nsawhney@gmail.com>
 #  
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without 
@@ -10,7 +10,7 @@
 
 AC_INIT([OBOE],
         [1.0],
-        [Nidhi Sawhney nidhi.sawhney@hec.unige.ch],
+        [Nidhi Sawhney nsawhney@gmail.com],
         [OBOE])
 AC_CONFIG_AUX_DIR(config)
 AM_CONFIG_HEADER(config.h)

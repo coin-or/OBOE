@@ -38,7 +38,7 @@
 #define PACKAGE "OBOE"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "Nidhi Sawhney nidhi.sawhney@hec.unige.ch"
+#define PACKAGE_BUGREPORT "Nidhi Sawhney nsawhney@gmail.com"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "OBOE"

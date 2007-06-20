@@ -32,7 +32,7 @@ OBTAINING OBOE
      In this package we provide the C++ implementation of OBOE. There exists
      a MATLAB version, which is a precursor to this distribution.
      For obtaining OBOE for C++ or MATLAB please contact 
-     jean-philippe.vial@hec.unige.ch
+     Jean-Philippe Vial <jpvial@ordecsys.com>
 
 DOCUMENTATION
      For documentation, please see the files in the doc subdirectory.
@@ -235,9 +235,10 @@ CREDITS
      The current version is maintained by:
      
      Nidhi Sawhney
-     nidhi.sawhney@hec.unige.ch, nsawhney@yahoo.com
+     nsawhney@gmail.com
 
      Jean-Philippe Vial
      HEC, Universite de Geneve
      jean-philippe.vial@hec.unige.ch
+     Jean-Philippe Vial <jpvial@ordecsys.com>
     

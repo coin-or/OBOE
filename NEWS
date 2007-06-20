@@ -1,11 +1,10 @@
 OBOE -- History of visible changes.
 
-Copyright (C) 2005 Université de Genève
 See COPYING copying conditions.
 
-Please send OBOE bug reports to nidhi.sawhney@hec.unige.ch.
+Please send OBOE bug reports to nsawhney@gmail.com.
 
-Version 0.1
+Version 1.0
 
 * Oracle Based Optimization Engine based on 
 * Analytic Center Cutting Plane Method(ACCPM)

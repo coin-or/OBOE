@@ -31,7 +31,7 @@ int
 DualMethod::run(Manager &manager)
 {
   LocSet locSet(manager, *_param);
-  manager.getPointGen()._xScaled.resize(0, 0);
+  manager.getPointGen()._xScaled.resize(1, 0);
   if (performNewtonSteps(manager, locSet) == 0) {
     computeLowerBound(manager, locSet);
   }

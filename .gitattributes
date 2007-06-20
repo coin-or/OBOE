@@ -49,6 +49,8 @@ include/config.h -text
 lib/OBOE.vs5.lib -text
 m4/Makefile.am -text
 m4/Makefile.in -text
+m4/coin.m4 -text
+m4/oboe_usr_libs.m4 -text
 /reconf -text
 src/AccpmCore/LocSet.C -text
 src/AccpmCore/LocSet.h -text

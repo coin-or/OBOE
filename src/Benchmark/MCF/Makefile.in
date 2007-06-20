@@ -13,6 +13,16 @@
 # PARTICULAR PURPOSE.
 
 @SET_MAKE@
+
+# Copyright (c) 2004-2007 University of Geneva, HEC, Logilab
+# 
+# OBOE is published under the Common Public License.
+#
+# Authors :
+# Nidhi Sawhney <nsawhney@yahoo.com>
+# The OBOE team
+#
+#
 srcdir = @srcdir@
 top_srcdir = @top_srcdir@
 VPATH = @srcdir@
@@ -39,7 +49,8 @@ check_PROGRAMS = oboeMCF$(EXEEXT)
 subdir = src/Benchmark/MCF
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/configure.ac
+am__aclocal_m4_deps = $(top_srcdir)/m4/coin.m4 \
+	$(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 mkinstalldirs = $(install_sh) -d
@@ -81,6 +92,9 @@ CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 ACCPM_DIR = @ACCPM_DIR@
 ACLOCAL = @ACLOCAL@
+ADDLIBS = @ADDLIBS@
+ALWAYS_FALSE_FALSE = @ALWAYS_FALSE_FALSE@
+ALWAYS_FALSE_TRUE = @ALWAYS_FALSE_TRUE@
 AMDEP_FALSE = @AMDEP_FALSE@
 AMDEP_TRUE = @AMDEP_TRUE@
 AMTAR = @AMTAR@
@@ -93,6 +107,10 @@ BLAS = @BLAS@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
+COIN_HAS_GLPK_FALSE = @COIN_HAS_GLPK_FALSE@
+COIN_HAS_GLPK_TRUE = @COIN_HAS_GLPK_TRUE@
+COIN_HAS_OSI_FALSE = @COIN_HAS_OSI_FALSE@
+COIN_HAS_OSI_TRUE = @COIN_HAS_OSI_TRUE@
 CPP = @CPP@
 CPPFLAGS = @CPPFLAGS@
 CXX = @CXX@
@@ -110,8 +128,10 @@ ECHO_T = @ECHO_T@
 EGREP = @EGREP@
 EXEEXT = @EXEEXT@
 F77 = @F77@
+FADDLIBS = @FADDLIBS@
 FFLAGS = @FFLAGS@
-GREP = @GREP@
+GLPKINCDIR = @GLPKINCDIR@
+GLPKLIB = @GLPKLIB@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
@@ -130,8 +150,9 @@ OBJEXT = @OBJEXT@
 OBOE_INCLUDES = @OBOE_INCLUDES@
 OBOE_LDADD = @OBOE_LDADD@
 OBOE_LDFLAGS = @OBOE_LDFLAGS@
-OBOE_PLUS = @OBOE_PLUS@
 OBOE_ROOT = @OBOE_ROOT@
+OSIINCDIR = @OSIINCDIR@
+OSILIB = @OSILIB@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
 PACKAGE_NAME = @PACKAGE_NAME@
@@ -144,9 +165,12 @@ SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
 VERSION = @VERSION@
+ac_ct_AR = @ac_ct_AR@
 ac_ct_CC = @ac_ct_CC@
 ac_ct_CXX = @ac_ct_CXX@
 ac_ct_F77 = @ac_ct_F77@
+ac_ct_RANLIB = @ac_ct_RANLIB@
+ac_ct_STRIP = @ac_ct_STRIP@
 am__fastdepCC_FALSE = @am__fastdepCC_FALSE@
 am__fastdepCC_TRUE = @am__fastdepCC_TRUE@
 am__fastdepCXX_FALSE = @am__fastdepCXX_FALSE@
@@ -163,30 +187,23 @@ build_cpu = @build_cpu@
 build_os = @build_os@
 build_vendor = @build_vendor@
 datadir = @datadir@
-datarootdir = @datarootdir@
-docdir = @docdir@
-dvidir = @dvidir@
 exec_prefix = @exec_prefix@
 host = @host@
 host_alias = @host_alias@
 host_cpu = @host_cpu@
 host_os = @host_os@
 host_vendor = @host_vendor@
-htmldir = @htmldir@
 includedir = @includedir@
 infodir = @infodir@
 install_sh = @install_sh@
 libdir = @libdir@
 libexecdir = @libexecdir@
-localedir = @localedir@
 localstatedir = @localstatedir@
 mandir = @mandir@
 mkdir_p = @mkdir_p@
 oldincludedir = @oldincludedir@
-pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
-psdir = @psdir@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 sysconfdir = @sysconfdir@

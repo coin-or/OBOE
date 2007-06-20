@@ -21,4 +21,4 @@ EXTRA_DIST = reconf configure Doxyfile create_oboe_lib.sh README.W32 \
 
 
 include_HEADERS = config.h
-SUBDIRS = m4 src doc $(OBOE_PLUS) 
+SUBDIRS = m4 src doc

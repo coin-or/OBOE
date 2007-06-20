@@ -14,6 +14,6 @@ RhoMin D 1e-10
 DynamicRho I 0
 ComputeLowerBound I 0
 RadiusBall D 40000
-DiagHessian I 0
+DiagHessian I 1
 CheckLocSetInterior I 1
 LPSolverName S "CLP"

@@ -303,21 +303,4 @@ AC_CONFIG_FILES([
    src/Benchmark/APS/Makefile
 ])
 
-if test "$OBOE_PLUS" = 1; then 
-  AC_CONFIG_FILES([
-     Accpm++/Makefile
-     Accpm++/src/Makefile
-     Accpm++/Benchmark/Makefile
-     Accpm++/Benchmark/QP/Makefile
-     Accpm++/Benchmark/MCF/Makefile
-     Accpm++/Benchmark/ED/Makefile
-     Accpm++/SparseMatrix/Makefile
-     Accpm++/Transform/Makefile
-  ])
-  OBOE_PLUS="Accpm++";
-else
-  OBOE_PLUS="";
-fi
-AC_SUBST(OBOE_PLUS)
-
 AC_OUTPUT

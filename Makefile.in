@@ -52,8 +52,7 @@ DIST_COMMON = README $(am__configure_deps) $(include_HEADERS) \
 	config/install-sh config/ltmain.sh config/missing
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
-am__aclocal_m4_deps = $(top_srcdir)/m4/coin.m4 \
-	$(top_srcdir)/configure.ac
+am__aclocal_m4_deps = $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
@@ -94,9 +93,6 @@ distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
 ACCPM_DIR = @ACCPM_DIR@
 ACLOCAL = @ACLOCAL@
-ADDLIBS = @ADDLIBS@
-ALWAYS_FALSE_FALSE = @ALWAYS_FALSE_FALSE@
-ALWAYS_FALSE_TRUE = @ALWAYS_FALSE_TRUE@
 AMDEP_FALSE = @AMDEP_FALSE@
 AMDEP_TRUE = @AMDEP_TRUE@
 AMTAR = @AMTAR@
@@ -109,10 +105,6 @@ BLAS = @BLAS@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
-COIN_HAS_GLPK_FALSE = @COIN_HAS_GLPK_FALSE@
-COIN_HAS_GLPK_TRUE = @COIN_HAS_GLPK_TRUE@
-COIN_HAS_OSI_FALSE = @COIN_HAS_OSI_FALSE@
-COIN_HAS_OSI_TRUE = @COIN_HAS_OSI_TRUE@
 CPP = @CPP@
 CPPFLAGS = @CPPFLAGS@
 CXX = @CXX@
@@ -130,10 +122,7 @@ ECHO_T = @ECHO_T@
 EGREP = @EGREP@
 EXEEXT = @EXEEXT@
 F77 = @F77@
-FADDLIBS = @FADDLIBS@
 FFLAGS = @FFLAGS@
-GLPKINCDIR = @GLPKINCDIR@
-GLPKLIB = @GLPKLIB@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
 INSTALL_SCRIPT = @INSTALL_SCRIPT@
@@ -153,8 +142,6 @@ OBOE_INCLUDES = @OBOE_INCLUDES@
 OBOE_LDADD = @OBOE_LDADD@
 OBOE_LDFLAGS = @OBOE_LDFLAGS@
 OBOE_ROOT = @OBOE_ROOT@
-OSIINCDIR = @OSIINCDIR@
-OSILIB = @OSILIB@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
 PACKAGE_NAME = @PACKAGE_NAME@
@@ -443,7 +430,7 @@ distclean-tags:
 distdir: $(DISTFILES)
 	$(am__remove_distdir)
 	mkdir $(distdir)
-	$(mkdir_p) $(distdir)/. $(distdir)/WIN32 $(distdir)/WIN32/Test/MCFTest $(distdir)/config $(distdir)/doc $(distdir)/doc/userguide $(distdir)/include $(distdir)/m4
+	$(mkdir_p) $(distdir)/. $(distdir)/WIN32 $(distdir)/WIN32/Test/MCFTest $(distdir)/config $(distdir)/doc $(distdir)/doc/userguide $(distdir)/include
 	@srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`; \
 	topsrcdirstrip=`echo "$(top_srcdir)" | sed 's|.|.|g'`; \
 	list='$(DISTFILES)'; for file in $$list; do \

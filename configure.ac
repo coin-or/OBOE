@@ -77,8 +77,8 @@ else
 AC_MSG_RESULT(no)
 fi
 
-AC_COIN_HAS_USER_LIBRARY([Osi],[OSI],[OsiSolverInterface.hpp])
-AC_COIN_HAS_USER_LIBRARY([Glpk],[GLPK],[glpk.h])
+dnl AC_COIN_HAS_USER_LIBRARY([Osi],[OSI],[OsiSolverInterface.hpp])
+dnl AC_COIN_HAS_USER_LIBRARY([Glpk],[GLPK],[glpk.h])
 
 dnl AC_OBOE_HAS_USER_LIBRARY([Glpk],[GLPK],[glpk.h],[glp_lpx_simplex])
 

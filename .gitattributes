@@ -18,7 +18,6 @@ WIN32/OBOE_LIB.vs5.vcproj -text
 WIN32/Test/MCFTest/MCFTest.vcproj -text
 WIN32/Test/MCFTest/ReadMe.txt -text
 WIN32/config.h -text
-/config.h -text
 /config.h.in -text
 config/config.guess -text
 config/config.sub -text

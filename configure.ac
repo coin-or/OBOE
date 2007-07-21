@@ -77,7 +77,6 @@ else
 AC_MSG_RESULT(no)
 fi
 
-m4_pattern_allow
 AC_COIN_HAS_USER_LIBRARY([Osi],[OSI],[OsiSolverInterface.hpp])
 AC_COIN_HAS_USER_LIBRARY([Glpk],[GLPK],[glpk.h])
 

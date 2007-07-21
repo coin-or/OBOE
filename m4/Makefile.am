@@ -12,7 +12,7 @@
 m4datadir = $(datadir)/aclocal
 
 # List your m4 macros here
-m4macros = 
+m4macros = coin.m4 oboe_usr_libs.m4 
 
 # The following is boilerplate
 m4data_DATA = $(m4macros) 

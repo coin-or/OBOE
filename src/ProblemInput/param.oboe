@@ -89,3 +89,5 @@ ConvexityFix		I	0
 #Fix the proximal center. If set to 1 it sets the proximal center to 0
 FixedProximalCenter	I	0
 
+#LP Solver to use to analyse empty Localisation Set`
+LPSolverName		S	"GLPK"

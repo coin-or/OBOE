@@ -129,7 +129,8 @@ namespace Accpm
       assert (_numCuts == _rhsCoef.size());
       for (int i = 0; i < _numCuts; ++i) {
 	AccpmVector *cut = new AccpmVector(_activeCutsM.getColumn(i));
-	_cutSet[cut] = ++_currentCutId;
+	AccpmVectorIntPair *cutp = new AccpmVectorIntPair(cut,(int) _subProblemIndex(i));
+	_cutSet[cutp] = ++_currentCutId;
       }
     }
 

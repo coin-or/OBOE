@@ -47,7 +47,8 @@ namespace Accpm
     template<class Archive> 
       void save(Archive &ar, const unsigned int file_version) const
       {
-	ar & size();
+	int n = size();
+	ar & n;
 	for (int i = 0; i < size(); ++i) {
 	  ar & *(addr() + i);
 	}

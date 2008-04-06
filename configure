@@ -20221,6 +20221,16 @@ if test -z "$LAPACKCPP_DIR"; then
 	fi
 fi
 
+if test -z "$LAPACKCPP_DIR/include"; then
+        echo ""
+	echo "ERROR: LAPACKCPP_DIR does not have include directory"
+	echo "Please set up LAPACKCPP_DIR such that LAPACKCPP_DIR/include"
+	echo "or LAPACKCPP_DIR/include/lapackpp has the required header files."
+	echo ""
+	exit
+
+fi
+
 if test -z "$LAPACKCPP_LIB"; then
 case "$host" in
   *-mingw32*)
@@ -20272,7 +20282,7 @@ OBOE_INCLUDES="$OBOE_INCLUDES -I$GLPKINCDIR"
 fi
 
 
-OBOE_INCLUDES="$OBOE_INCLUDES -I$LAPACKCPP_DIR -I$LAPACKCPP_DIR/include/"
+OBOE_INCLUDES="$OBOE_INCLUDES -I$LAPACKCPP_DIR -I$LAPACKCPP_DIR/include/ -I$LAPACKCPP_DIR/include/lapackpp"
 
 
                                                                                                                                                                                                                             ac_config_files="$ac_config_files Makefile README doc/Makefile m4/Makefile src/Makefile src/Utilities/Makefile src/AccpmLA/Makefile src/ProblemInput/Makefile src/AccpmCore/Makefile src/Oracle/Makefile src/UI/Makefile src/Benchmark/Makefile src/Benchmark/LA/Makefile src/Benchmark/PMED/Makefile src/Benchmark/QP/Makefile src/Benchmark/TSP/Makefile src/Benchmark/UAX/Makefile src/Benchmark/CS/Makefile src/Benchmark/HACCPM/Makefile src/Benchmark/NNPOL/Makefile src/Benchmark/MCF/Makefile src/Benchmark/APS/Makefile"

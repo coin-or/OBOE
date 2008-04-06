@@ -224,6 +224,16 @@ if test -z "$LAPACKCPP_DIR"; then
 	fi 	
 fi
 
+if test -z "$LAPACKCPP_DIR/include"; then
+        echo ""
+	echo "ERROR: LAPACKCPP_DIR does not have include directory"
+	echo "Please set up LAPACKCPP_DIR such that LAPACKCPP_DIR/include"
+	echo "or LAPACKCPP_DIR/include/lapackpp has the required header files."
+	echo ""
+	exit
+
+fi  	
+
 if test -z "$LAPACKCPP_LIB"; then
 case "$host" in
   *-mingw32*)	
@@ -275,7 +285,7 @@ OBOE_INCLUDES="$OBOE_INCLUDES -I$GLPKINCDIR"
 fi
 AC_SUBST(OBOE_LDFLAGS)
 AC_SUBST(OBOE_LDADD)
-OBOE_INCLUDES="$OBOE_INCLUDES -I$LAPACKCPP_DIR -I$LAPACKCPP_DIR/include/"
+OBOE_INCLUDES="$OBOE_INCLUDES -I$LAPACKCPP_DIR -I$LAPACKCPP_DIR/include/ -I$LAPACKCPP_DIR/include/lapackpp"
 AC_SUBST(OBOE_INCLUDES)
 
 AC_CONFIG_FILES([

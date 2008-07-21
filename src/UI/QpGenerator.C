@@ -99,6 +99,7 @@ QpGenerator::run()
 	  printIteration(val, val2, subGrad, subProblemIndex);
 	}
 	_method->run(*_manager);	
+        _manager->updatePreviousPhase2();
 	if (_manager->getExitCode() == RELATIVE_GAP_REACHED) {
 	  std::cout << "Relative Gap reached" << std::endl;
 	  return 1;

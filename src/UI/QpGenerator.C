@@ -36,7 +36,7 @@ void
 QpGenerator::init(Parameters *param, Oracle *oracle)
 {
   std::cout << "************************************************************************" << std::endl;
-  std::cout << "OBOE Version 0.1" <<
+  std::cout << "OBOE Version 1.0" <<
     "\n(C) 2005 Université de Genève. See Copyright Notification in OBOE" << std::endl;
   std::cout << "************************************************************************\n" << std::endl;
   _param = param;

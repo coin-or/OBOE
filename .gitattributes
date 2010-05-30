@@ -1,5 +1,6 @@
 * text=auto !eol
 /AUTHORS -text
+/CHANGES -text
 /COPYING -text
 /ChangeLog -text
 /Doxyfile -text

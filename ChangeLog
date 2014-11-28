@@ -31,3 +31,16 @@ The above issues were found when trying to ember OBOE in a Branch and Bound
 framework. Bugs reported by Claude Philippe Medard(claude.philippe.medard@gmail.com).
 
 *******************************************************************************
+*******************************************************************************
+Date : 28 November 2014
+Author : Nidhi Sawhney (nsawhney@gmail.com)
+*******************************************************************************
+Ref: Ticket #15
+
+The following files were modified:
+1. configure.ac (Removed linking with g2c library as it is obsolete, the newer version of lapackpp 
+links using gfortran which does not need to be specified explicitly.
+2. src/AccpmLA/AccpmGenMatrix.h
+3. src/AccpmLA/AccpmLASolve.C 
+
+*******************************************************************************

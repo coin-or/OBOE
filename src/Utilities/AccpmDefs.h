@@ -16,6 +16,8 @@
 #include <iostream>
 #include <cmath>
 #include <string.h>
+#include <cstdlib>
+#include <cstring>
 
 #include <set>
 typedef std::set<int> StdIntSet;

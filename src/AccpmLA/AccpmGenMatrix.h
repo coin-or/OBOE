@@ -83,7 +83,7 @@ namespace Accpm
     inline AccpmGenMatrix operator()(const LaIndex& I, const LaIndex& J) 
 	{ return RealMatrix::operator()(I,J); }
     inline double& operator()(int i, int j) { return RealMatrix::operator()(i,j); }
-    inline double& operator()(int i, int j) const { return RealMatrix::operator()(i,j); }                             
+    inline const double& operator()(int i, int j) const { return RealMatrix::operator()(i,j); }                             
 #endif
 
 	//New AccpmGenMatrix operations

@@ -266,9 +266,9 @@ AC_SUBST(LAPACKCPP_LIB)
 echo "Using LAPACK++ library  $LAPACKCPP_LIB"
 
 if test "$serialization" = yes; then
-OBOE_LDADD="-lboost_serialization $LAPACKCPP_LIB $LAPACK $BLAS -lg2c"
+OBOE_LDADD="-lboost_serialization $LAPACKCPP_LIB $LAPACK $BLAS"
 else
-OBOE_LDADD="$LAPACKCPP_LIB $LAPACK $BLAS -lg2c"
+OBOE_LDADD="$LAPACKCPP_LIB $LAPACK $BLAS"
 fi
 
 if test "$oboe_has_glpk" = true; then

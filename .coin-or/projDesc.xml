@@ -1,171 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type = "text/xsl" href = "http://www.coin-or.org/projects/autoGen.xsl"?>
-<projectData xmlns="coin-or.org" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="coin-or.org http://www.coin-or.org/projects/autoGen.xsd">
-
-	<projectBasics>
-
-		<projectName>OBOE</projectName>
-
-		<projectDescription>
-		OBOE (Oracle Based Optimization Engine) is an open source
-		software for general convex optimization. It assumes that a
-		user-made code, thereafter named oracle, is capable of
-		delivering first order information on the key elements of the
-		problem (support the feasible set, support to the objective
-		function). The engine exploits this information to construct
-		the so-called localization set which is a polyhedral
-		approximation of the set of optimal solutions.
-		</projectDescription>
-		<projectShortDescription>
-		  Optimization of convex problems with user-supplied methods delivering key first order information
-		  (like support to the feasible set, support to the objective function).
-		</projectShortDescription>
-
-		<projectManager>nsawhney at gmail.com</projectManager>
-
-		<projectHomePage>
-		https://projects.coin-or.org/OBOE/
-		</projectHomePage>
-
-                <projectLicense>Common Public License 1.0</projectLicense>
-                <projectLicenseURL>
-		http://www.opensource.org/licenses/cpl1.0.php
-		</projectLicenseURL>
-
-		<coinLinkedProjects>
-		  <coinProject>
-		    <repoName>CLP</repoName>
-		  </coinProject>
-		</coinLinkedProjects>
-
-		<!-- Below, you can list other packages your project           -->
-		<!-- either requires or can optionally link to. These are      -->
-		<!-- one by one, as in the following example:                  -->
-		<!--                                                           -->
-		<otherLinkedPackages>
-                    <otherPackage>                                         
-		       <packageName>                                    
-	                  BLAS                                     
-		       </packageName>                                      
-		       <packageURL>                                         
-			  http://www.netlib.org/blas
-		       </packageURL>                                        
-		       <requiredOrOptional>                                 
-	                   Required                                          
-		       </requiredOrOptional>                                
-		    </otherPackage>          
-	
-                    <otherPackage>                                         
-		       <packageName>                                    
-	                  LAPACK                                     
-		       </packageName>                                      
-		       <packageURL>                                         
-			  http://www.netlib.org/lapack
-		       </packageURL>                                        
-		       <requiredOrOptional>                                 
-	                   Required                                          
-		       </requiredOrOptional>                                
-		    </otherPackage>          
-
-                    <otherPackage>                                         
-		       <packageName>                                    
-	                  Lapackpp                                     
-		       </packageName>                                      
-		       <packageURL>                                         
-			  http://www.sourceforge.net/projects/lapackpp
-		       </packageURL>                                        
-		       <requiredOrOptional>                                 
-	                   Required                                          
-		       </requiredOrOptional>                                
-		    </otherPackage>          
-
-		    <otherPackage>                                          
-		     <packageName>                                        
-		         GLPK                                             
-		      </packageName>                                       
-		      <packageURL>                                        
-		         http://www.gnu.org/software/glpk/               
-		      </packageURL>                                        
-		      <requiredOrOptional>                                
-		         Optional                                        
-		      </requiredOrOptional>                             
-		   </otherPackage>                                     
-
-		   <otherPackage>                                          
-		     <packageName>                                        
-		         Boost serialization (on Linux)
-		      </packageName>                                       
-		      <packageURL>                                        
-		         http://www.boost.org/libs/serialization               
-		      </packageURL>                                        
-		      <requiredOrOptional>                                
-		         Optional                                        
-		      </requiredOrOptional>                             
-		   </otherPackage>                                          
-	        </otherLinkedPackages>                                    
-		<!--                                                           -->
-		<!--Fill in your text below (outside the comment block).       -->
-
-		<projectLanguage>C++</projectLanguage>
-
-
-		<developmentStatus>
-
-			<activityStatus>Active</activityStatus>
-
-			<maturityLevel>4</maturityLevel>
-
-		</developmentStatus>
-
-	
-		<testedPlatforms>                                          
-	        <platform>                                              
-		<operatingSystem>Linux</operatingSystem> 
-		      <compiler>g++</compiler>                             
-		</platform>                                            
-		 <platform>                                              
-		 <operatingSystem>Microsoft Windows</operatingSystem> 
-		      <compiler>Visual Studio .NET</compiler>                       
-	         </platform>                                        	                                                         
-		 <platform>                                             
-		 <operatingSystem>Microsoft Windows</operatingSystem>
-		 <compiler>MinGW32/g++</compiler>                       
-		 </platform>                                           
-	
-		</testedPlatforms>					     
-		<!--                                                           -->
-		<!--Fill in your text below (outside the comment block).       -->
-
-		<projectCategories>
-		<category>
-		Optimization convex non-differentiable
-		</category>
-		</projectCategories>
-		
-
-		<!-- End of projectBasics block                                -->
-
-	</projectBasics>
-
-	<leftMenuLinks>
-
-		<documentation>
-		https://projects.coin-or.org/OBOE/browser/trunk/doc/userguide/OBOE-UserGuide.pdf?format=raw
-		</documentation>
-
-		<sourceCodeDownload>
-		http://www.coin-or.org/download/source/OBOE/
-		</sourceCodeDownload>
-
-		<binaryDownload> </binaryDownload>
-
-		<mailingList>
-		http://list.coin-or.org/mailman/listinfo/oboe
-		</mailingList>
-
-	</leftMenuLinks>
-
-	<!-- End of projectData block                                          -->
+<projectData xmlns="coin-or.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="coin-or.org http://www.coin-or.org/projects/autoGen.xsd">
+  <projectBasics>
+    <projectName>OBOE</projectName>
+    <projectDescription>
+      OBOE (Oracle Based Optimization Engine) is an open source
+      software for general convex optimization. It assumes that a
+      user-made code, thereafter named oracle, is capable of
+      delivering first order information on the key elements of the
+      problem (support the feasible set, support to the objective
+      function). The engine exploits this information to construct
+      the so-called localization set which is a polyhedral
+      approximation of the set of optimal solutions.
+      </projectDescription>
+    <projectShortDescription>
+        Optimization of convex problems with user-supplied methods delivering key first order information
+        (like support to the feasible set, support to the objective function).
+    </projectShortDescription>
+    <projectManager>Nidhi Swahncy</projectManager>
+    <projectHomePage>https://github.com/coin-or/OBOE</projectHomePage>
+    <projectLicense>Common Public License 1.0</projectLicense>
+    <projectLicenseURL>http://www.opensource.org/licenses/cpl1.0.php</projectLicenseURL>
+    <coinLinkedProjects>
+      <coinProject>
+        <repoName>CLP</repoName>
+      </coinProject>
+    </coinLinkedProjects>
+    <otherLinkedPackages>
+      <otherPackage>
+        <packageName>BLAS</packageName>
+        <packageURL>http://www.netlib.org/blas</packageURL>
+        <requiredOrOptional>Required</requiredOrOptional>
+      </otherPackage>
+      <otherPackage>
+        <packageName>LAPACK</packageName>
+        <packageURL>http://www.netlib.org/lapack</packageURL>
+        <requiredOrOptional>Required</requiredOrOptional>
+      </otherPackage>
+      <otherPackage>
+        <packageName>Lapackpp</packageName>
+        <packageURL>http://www.sourceforge.net/projects/lapackpp</packageURL>
+        <requiredOrOptional>Required</requiredOrOptional>
+      </otherPackage>
+      <otherPackage>
+        <packageName>GLPK</packageName>
+        <packageURL>http://www.gnu.org/software/glpk/</packageURL>
+        <requiredOrOptional>Optional</requiredOrOptional>
+      </otherPackage>
+      <otherPackage>
+        <packageName>Boost serialization (on Linux)</packageName>
+        <packageURL>http://www.boost.org/libs/serialization</packageURL>
+        <requiredOrOptional>Optional</requiredOrOptional>
+      </otherPackage>
+    </otherLinkedPackages>
+    <projectLanguage>C++</projectLanguage>
+    <developmentStatus>
+      <activityStatus>Inactive</activityStatus>
+      <maturityLevel>4</maturityLevel>
+    </developmentStatus>
+    <testedPlatforms>
+      <platform>
+        <operatingSystem>Linux</operatingSystem>
+        <compiler>g++</compiler>
+      </platform>
+      <platform>
+        <operatingSystem>Microsoft Windows</operatingSystem>
+        <compiler>Visual Studio .NET</compiler>
+      </platform>
+      <platform>
+        <operatingSystem>Microsoft Windows</operatingSystem>
+        <compiler>MinGW32/g++</compiler>
+      </platform>
+    </testedPlatforms>
+    <projectCategories>
+      <category>
+      Optimization convex non-differentiable
+      </category>
+    </projectCategories>
+  </projectBasics>
+  <leftMenuLinks>
+    <documentation>https://github.com/coin-or/OBOE/blob/master/doc/userguide/OBOE-UserGuide.pdf</documentation>
+    <sourceCodeDownload>http://www.coin-or.org/download/source/OBOE/</sourceCodeDownload>
+    <binaryDownload> </binaryDownload>
+    <mailingList>http://list.coin-or.org/mailman/listinfo/oboe </mailingList>
+  </leftMenuLinks>
 </projectData>
